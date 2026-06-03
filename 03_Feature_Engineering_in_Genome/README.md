@@ -1,3 +1,36 @@
+# Somatic Mutation Analysis Pipeline
+
+This project details the end-to-end bioinformatics pipeline developed to perform genomic sequence analysis, variant identification, and clinical interpretation.
+
+### 1. Data Acquisition & Pre-processing
+* **Action**: **Loaded the reference and sample DNA sequences**, verified file integrity, and checked sequence length.
+* **Result**: **Successfully loaded the target genomic region (Chromosome 5 segment)**.
+
+### 2. Sequence Encoding & K-mer Generation
+* **Action**: **Applied integer encoding** to convert DNA bases into numeric values and decomposed sequences into k-mers (k=3).
+* **Result**: **Generated structured numeric data and sequence patterns** for systematic analysis.
+
+### 3. Sequence Alignment
+* **Action**: **Performed pairwise alignment** between reference and sample sequences to establish a comparison framework.
+* **Result**: **Provided a base-to-base comparison framework** to identify exact variant locations.
+
+### 4. Mutation Identification
+* **Action**: **Used alignment data** to pinpoint genetic variations (substitutions, deletions, insertions).
+* **Result**: **Successfully mapped the exact positions and nature of mutations** within the target sequence.
+
+### 5. Functional Impact Analysis
+* **Action**: **Analyzed how identified mutations** might affect the protein sequence and structural stability.
+* **Result**: **Assessed the potential structural and biological impact** of the variants on the protein's overall function.
+
+### 6. Clinical Significance & Annotation
+* **Action**: **Cross-referenced identified variants** with clinical databases (e.g., ClinVar) to retrieve known medical information.
+* **Result**: **Determined the clinical significance (Pathogenic, Benign, or Uncertain)** of the mutations, bridging the gap between genotype and phenotype.
+
+### 7. Comparative Analysis & Protein Visualization
+* **Action**: **Conducted a deep comparative analysis** to confirm findings and utilized py3Dmol to visualize the 3D protein structure.
+* **Result**: **Rendered an interactive 3D model**, enabling the visualization of how specific mutations alter the protein's structural domain.
+
+
 # BRCA1 Gene Mutation Analysis and AI Classification
 
 This repository contains my practice work in bioinformatics, focusing on analyzing the BRCA1 gene to identify mutations and using machine learning for genomic sequence classification.
